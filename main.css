@@ -1,0 +1,49 @@
+body {
+  max-width: 80ch;
+  margin: 3em auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+#pfp {
+  border-radius: 50%;
+  width: 10em;
+  margin-right: 3em;
+}
+
+#github, #email {
+  width: 1em;
+  margin: 0 0.2em;
+  transform: translate(0, 4px);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a p {
+  color: darkgray;
+  text-decoration: underline;
+  display: inline;
+  margin: 0;
+  margin-right: 1em;
+}
+
+article img {
+  width: 80ch;
+  border-radius: 12px;
+}
+
+summary {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+summary:hover {
+  cursor: pointer;
+}
