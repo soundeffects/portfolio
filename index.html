@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>James Youngblood, portfolio</title>
+    <title>James Youngblood's portfolio</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
     <header>
       <img src="pfp.webp" alt="profile picture" id="pfp" />
       <div id="bio">
-        <h1>James Youngblood, portfolio</h1>
+        <h1>James Youngblood's portfolio</h1>
         <p>
           Masters student at the University of Utah, pursuing a career in
           computer graphics.
@@ -25,28 +25,75 @@
         </nav>
       </div>
     </header>
-    <article>
-      <img src="planets_on_wgpu.gif" alt="planets on wgpu demo gif" />
+    <article id="planets">
       <details>
         <summary>planets on wgpu</summary>
-        <p>placeholder</p>
+	<a href="https://soundeffects.github.io/planets_on_wgpu/">
+	  <img src="link.svg" class="link" alt="planets on wgpu link" />
+	  <p>see it here</p>
+	</a>
+        <p>
+	  Using the Rust graphics library <a href="https://wgpu.rs">wgpu</a>, I created a procedural planet generator
+	  and deployed it to the web. Terrain, temperature, humidity, and clouds are all generated with shader noise
+	  algorithms and affect the color of the planet's surface.
+	</p>
       </details>
     </article>
-    <article>
-      <img src="spellcasters.gif" alt="spellcasters demo gif" />
+    <article id="spellcasters">
       <details>
         <summary>spellcasters</summary>
-        <p>placeholder</p>
+	<a href="#" disabled=true>
+	  <p>code is not open source</p>
+	</a>
+        <p>
+	  My team created a Unity VR game which allows two players to combat by throwing spells at each other. The
+	  players must draw a specific 3D shape to activate a spell. The game served as a proof of concept for our
+	  3D gesture recognizer.
+	</p>
       </details>
     </article>
-    <article>
-      <h2>Voxelite</h2>
+    <article id="voxelite">
+      <details>
+	<summary>voxelite</summary>
+	<a href="https://github.com/soundeffects/voxelite">
+	  <img src="link.svg" class="link" alt="voxelite link" />
+	  <p>see it here</p>
+	</a>
+	<p>
+	  I built a simple chunked voxel terrain system for the <a href="https://bevyengine.org">Bevy game engine</a>.
+	  Chunk data is generated at startup using some simple noise, and chunk meshes are generated when the player
+	  moves within a certain distance (a very low distance for this demo).
+	</p>
+      </details>
     </article>
-    <article>
-      <h2>Jesture</h2>
+    <article id="jesture">
+      <details>
+	<summary>jesture</summary>
+	<a href="https://jestureapp.github.io">
+	  <img src="link.svg" class="link" alt="jesture link" />
+	  <p>see it here</p>
+	</a>
+	<p>
+	  My team created a desktop app using <a href="https://qt.io">Qt</a> and
+	  <a href="https://developers.google.com/mediapipe">MediaPipe</a> which dispatches keyboard and mouse events
+	  to your computer when you record and perform gestures in front of your webcam.
+	</p>
+      </details>
     </article>
-    <article>
-      <h2>Is Music Diverging?</h2>
+    <article id="diverging">
+      <details>
+	<summary>is music diverging?</summary>
+	<a href="https://dataviscourse2023.github.io/final-project-busybodies">
+	  <img src="link.svg" class="link" alt="is music diverging link" />
+	  <p>see it here</p>
+	</a>
+	<p>
+	  My team created a web article and interactive visualization for exploring the relationships between music
+	  genres, and determining empirically whether genres are similar or divergent. The page uses
+	  <a href="https://developer.spotify.com">Spotify</a> for data and <a href="https://d3js.org/">D3</a> for
+	  rendering the visualizations.
+	</p>
+      </details>
     </article>
   </body>
 </html>

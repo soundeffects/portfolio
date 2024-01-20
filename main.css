@@ -16,9 +16,9 @@ header {
   margin-right: 3em;
 }
 
-#github, #email {
+#github, #email, .link {
   width: 1em;
-  margin: 0 0.2em;
+  margin: 0 0;
   transform: translate(0, 4px);
 }
 
@@ -34,14 +34,64 @@ nav a p {
   margin-right: 1em;
 }
 
-article img {
-  width: 80ch;
-  border-radius: 12px;
+article {
+    color: white;
+    border-radius: 12px;
+    margin: 0;
+    margin-bottom: 3em;
+    width: 100%;
+    height: 55ch;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    padding-top: 2px;
+}
+
+#planets {
+    background-image: url("./planets_on_wgpu.gif");
+}
+
+#spellcasters {
+    background-image: url("./spellcasters.gif");
+    background-size: 130%;
+}
+
+#voxelite {
+    background-image: url("./voxelite.gif");
+    background-size: 130%;
+}
+
+#jesture {
+    background-image: url("./jesture.webp");
+}
+
+#diverging {
+    background-image: url("./diverging.gif");
+}
+
+details {
+    margin: 1em;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    padding: 1em;
+    backdrop-filter: blur(16px);
+    box-shadow: 0 2px 10px black;
+}
+
+details a {
+    color: lightgray;
+}
+
+details a p {
+    display: inline;
+    margin: 0;
+    margin-right: 1em;
 }
 
 summary {
   font-size: 2em;
   font-weight: 500;
+  mix-blend-mode: difference;
 }
 
 summary:hover {
