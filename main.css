@@ -1,6 +1,7 @@
 body {
   max-width: 80ch;
   margin: 3em auto;
+  padding: 0 1em;
 }
 
 header {
@@ -23,19 +24,25 @@ header {
 }
 
 nav a {
-  text-decoration: none;
+    text-decoration: none;
+    display: inline-block;
 }
 
 nav a p {
-  color: darkgray;
+  color: gray;
   text-decoration: underline;
   display: inline;
   margin: 0;
   margin-right: 1em;
 }
 
+.notice {
+    text-align: center;
+    color: gray;
+}
+
 article {
-    color: white;
+    position: relative;
     border-radius: 12px;
     margin: 0;
     margin-bottom: 3em;
@@ -69,31 +76,65 @@ article {
     background-image: url("./diverging.gif");
 }
 
+
+summary::-webkit-details-marker, summary::marker {
+    display: none;
+}
+
 details {
-    margin: 1em;
-    background: rgba(0, 0, 0, 0.4);
+    transform: translate(0, -2px);
+    position: absolute;
+    top: 0;
+    bottom: -2px;
+    left: 0;
+    right: -1px;
     border-radius: 12px;
-    padding: 1em;
-    backdrop-filter: blur(16px);
-    box-shadow: 0 2px 10px black;
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+details[open] {
+    opacity: 1;
+    backdrop-filter: blur(10px);
+}
+
+details:not([open]) a {
+    pointer-events: none;
 }
 
 details a {
-    color: lightgray;
+    color: gray;
+    text-decoration: none;
 }
 
-details a p {
-    display: inline;
+details p a {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 500;
     margin: 0;
-    margin-right: 1em;
+    display: inline-block;
 }
 
-summary {
-  font-size: 2em;
-  font-weight: 500;
-  mix-blend-mode: difference;
+a h2 {
+    text-decoration: underline;
+    margin-left: 0.1em;
+}
+    
+details summary {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3em;
 }
 
-summary:hover {
+details > summary:hover {
   cursor: pointer;
 }
+
