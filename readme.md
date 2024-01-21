@@ -1,5 +1,2 @@
 # James Youngblood
-Masters student at the University of Utah, pursuing a career in computer
-graphics.
-
-See my [portfolio!](soundeffects.github.io)
+A static webpage showing off things I've done. Visit it [here](https://soundeffects.github.io/portfolio).
